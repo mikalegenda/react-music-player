@@ -1,7 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,700&family=Merriweather+Sans:wght@300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h2 {
+  color: rgb(42, 42, 42);
+  font-family: "Lora";
+  font-style: italic;
+}
+
+h3 {
+  color: rgb(42, 42, 42);
+  font-family: "Merriweather Sans";
+  font-weight: 300;
 }
 
 @import "./player";
