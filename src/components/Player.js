@@ -4,7 +4,7 @@ import { faPlay, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-i
 
 const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   //State
-  const [songInfo, setSongInfo] = useState({ currentTime: null, duration: null });
+  const [songInfo, setSongInfo] = useState({ currentTime: 0, duration: 0 });
 
   //Refs
   const audioRef = useRef(null);
