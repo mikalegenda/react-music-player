@@ -1,0 +1,28 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid rgb(42, 42, 42);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      background: rgb(42, 42, 42);
+      color: white;
+    }
+
+    .music-icon {
+      margin-left: 0.3rem;
+    }
+  }
+}

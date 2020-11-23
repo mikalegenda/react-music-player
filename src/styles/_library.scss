@@ -4,8 +4,19 @@
   left: 0;
   width: 21rem;
   height: 100%;
+  background: white;
   box-shadow: 2px 2px 50px rgb(210, 210, 210);
   overflow: scroll;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-100%);
+
+  transition: all 300ms ease-in-out;
+
+  &.active {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 .song-library {
@@ -45,7 +56,7 @@
 
   h4 {
     font-size: 0.9rem;
-    font-family: "Merriweather";
+    font-family: "Merriweather Sans";
     font-weight: 300;
   }
 }
