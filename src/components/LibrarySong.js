@@ -4,14 +4,7 @@ const LibrarySong = ({ song, songs, setSongs, setCurrentSong, id, audioRef, isPl
   //Event Handlers
   const songSelectHandler = () => {
     setCurrentSong(song);
-    setSongs(
-      songs.map((targetSong) => {
-        return {
-          ...targetSong,
-          active: targetSong.id === song.id,
-        };
-      })
-    );
+
     //Check if song is playing
     if (isPlaying) {
       const playPromise = audioRef.current.play();
