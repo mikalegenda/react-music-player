@@ -43,6 +43,16 @@ input[type="range"]:focus {
   outline: none;
 }
 
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  background: transparent;
+  border: none;
+}
+
 .track {
   background: #000;
   width: 100%;
