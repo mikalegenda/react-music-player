@@ -32,7 +32,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={`App ${libraryActive ? "library-active" : ""}`}>
       <Nav libraryActive={libraryActive} setLibraryActive={setLibraryActive} />
       <SongInformation currentSong={currentSong} />
       <Player

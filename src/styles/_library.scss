@@ -33,6 +33,7 @@
   align-items: center;
   padding: 1rem;
   cursor: pointer;
+  transition: all 300ms ease;
   img {
     width: 30%;
   }
@@ -80,4 +81,10 @@
 
 .selected {
   background: rgb(183, 205, 246);
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }
