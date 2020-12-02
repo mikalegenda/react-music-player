@@ -44,11 +44,11 @@ input[type="range"]:focus {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  background: transparent;
+  border: none;
 }
 
 input[type="range"]::-moz-range-thumb {
-  appearance: none;
   background: transparent;
   border: none;
 }
