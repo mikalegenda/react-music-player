@@ -1,11 +1,10 @@
 import React from "react";
-import { playAudio } from "../helpers";
 
 const LibrarySong = ({ song, songs, setSongs, setCurrentSong, id, audioRef, isPlaying }) => {
   //Event Handlers
-  const songSelectHandler = () => {
-    setCurrentSong(song);
-    playAudio(isPlaying, audioRef);
+  const songSelectHandler = async () => {
+    await setCurrentSong(song);
+    if (isPlaying) audioRef.current.play();
   };
 
   return (
