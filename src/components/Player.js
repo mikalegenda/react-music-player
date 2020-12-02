@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { playAudio } from "../helpers";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,12 +37,14 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, audioRef
     if (direction === "skip-back") {
       if ((currentIndex - 1) % songs.length === -1) {
         setCurrentSong(songs[songs.length - 1]);
+        playAudio(isPlaying, audioRef);
         return;
       }
       setCurrentSong(songs[(currentIndex - 1) % songs.length]);
     } else {
       setCurrentSong(songs[(currentIndex + 1) % songs.length]);
     }
+    playAudio(isPlaying, audioRef);
   };
 
   //Helper Functions
